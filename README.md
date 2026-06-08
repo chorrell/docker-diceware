@@ -34,7 +34,8 @@ Get the version info:
 docker run -it --rm diceware --version
 ```
 
-Generate a password with 4 words (`-n 4`) using '-' as a delimiter (`-d-`) and replace 2 normal letters with a special character (-s 2):
+Generate a password with 4 words (`-n 4`) using '-' as a delimiter
+(`-d-`) and replace 2 normal letters with a special character (-s 2):
 
 ```sh
 docker run -it --rm diceware -n 4 -d- -s 2
@@ -66,7 +67,8 @@ alias diceware='docker run -i --rm chorrell/diceware:latest'
 
 ## Using the GitHub Container Registry image
 
-The lateset version of this image is also published to the GitHub Container Registry. You can use it like this:
+The lateset version of this image is also published to the GitHub
+Container Registry. You can use it like this:
 
 ```sh
 docker pull ghcr.io/chorrell/diceware:latest

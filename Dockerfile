@@ -4,7 +4,7 @@ FROM python:3.14-alpine
 LABEL org.opencontainers.image.source=https://github.com/chorrell/docker-diceware
 
 RUN set -ex \
-    && pip install --no-cache-dir diceware
+    && pip install --no-cache-dir diceware==1.0.1
 
 COPY --link docker-entrypoint.sh /usr/local/bin/
 
