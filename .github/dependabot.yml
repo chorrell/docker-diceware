@@ -3,10 +3,7 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "10:00"
-      timezone: "America/Toronto"
+      interval: "daily"
     pull-request-branch-name:
       separator: "/"
     commit-message:
@@ -18,10 +15,7 @@ updates:
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "09:45"
-      timezone: "America/Toronto"
+      interval: "daily"
     pull-request-branch-name:
       separator: "/"
     commit-message:
