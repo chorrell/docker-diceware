@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM python:3.15.0b4-alpine
+FROM python:3.15.0rc1-alpine
 
 LABEL org.opencontainers.image.source=https://github.com/chorrell/docker-diceware
 
