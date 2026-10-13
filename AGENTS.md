@@ -36,8 +36,12 @@ docker run -it --rm diceware -n 4 -d- -s 2  # 4 words, '-' delim, 2 special
 
 - `docker-publish.yml`: builds the image, tests it, and pushes to
   Docker Hub (`chorrell/diceware`) and GHCR (`ghcr.io/chorrell/diceware`)
-  on merge to `main`.
-- `shellcheck.yml`: lints shell scripts on PRs.
+  on merge to `main`, with provenance attestations in both. It calls the
+  shared [chorrell/workflows](https://github.com/chorrell/workflows)
+  `docker-publish` workflow; GHCR uses `GITHUB_TOKEN`, so the `diceware`
+  package must grant this repo write access (Package settings → Manage
+  Actions access).
+- `shellcheck.yml`: lints shell scripts on PRs (shared `shell-lint` workflow).
 
 ## Contributing
 
