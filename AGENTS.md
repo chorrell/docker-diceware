@@ -29,8 +29,11 @@ docker run -it --rm diceware -n 4 -d- -s 2  # 4 words, '-' delim, 2 special
 
 - Dockerfile uses `RUN set -ex` and `COPY --link` for cache-friendly layers.
 - Pin the `diceware` version explicitly via `pip install diceware==<version>`.
-- Pre-commit hooks (`.pre-commit-config.yaml`): actionlint, gitleaks, hadolint
-  (Dockerfile linting), markdownlint-cli2.
+- Pre-commit hooks (`.pre-commit-config.yaml`): gitleaks, hadolint
+  (Dockerfile linting), markdownlint-cli2, zizmor. zizmor is the GitHub
+  Actions workflow linter; actionlint isn't used because it rejects GitHub's
+  `$/` self-repository `uses:` syntax
+  ([rhysd/actionlint#711](https://github.com/rhysd/actionlint/issues/711)).
 
 ## CI/CD
 
