@@ -49,7 +49,7 @@ docker run -it --rm diceware -n 4 -d- -s 2  # 4 words, '-' delim, 2 special
 ## Contributing
 
 1. Branch from `main`.
-2. Run `pre-commit run --all-files` before committing.
+2. Run `prek run --all-files` before committing.
 3. Verify locally:
    `docker build -t diceware . && docker run -it --rm diceware --help`.
 4. Open a PR; CI runs the build/test and shellcheck workflows.
